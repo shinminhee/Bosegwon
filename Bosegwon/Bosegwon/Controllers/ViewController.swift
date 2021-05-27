@@ -65,60 +65,6 @@ extension ViewController {
         setBasic()
         setGenderView()
     }
-    final private func setGenderView() {
-        [genderView, maleView, femaleView, unisexView, maleLabel, femaleLabel, unisexLabel].forEach {
-            view.addSubview($0)
-        }
-        genderView.snp.makeConstraints {
-            $0.top.equalTo(searchBar.snp.bottom).offset(5)
-            $0.trailing.equalTo(searchBar.snp.trailing)
-            $0.height.equalTo(40)
-            $0.width.equalTo(190)
-        }
-        maleView.snp.makeConstraints {
-            $0.leading.equalTo(genderView).inset(10)
-            $0.top.bottom.equalTo(genderView).inset(15)
-            $0.width.equalTo(10)
-        }
-        maleLabel.snp.makeConstraints {
-            $0.leading.equalTo(maleView.snp.trailing).offset(5)
-            $0.top.bottom.equalTo(maleView)
-            $0.width.equalTo(30)
-        }
-        femaleView.snp.makeConstraints {
-            $0.leading.equalTo(maleLabel.snp.trailing).offset(5)
-            $0.top.bottom.equalTo(maleView)
-            $0.width.equalTo(10)
-        }
-        femaleLabel.snp.makeConstraints {
-            $0.leading.equalTo(femaleView.snp.trailing).offset(5)
-            $0.top.bottom.equalTo(maleView)
-            $0.width.equalTo(45)
-        }
-        unisexView.snp.makeConstraints {
-            $0.leading.equalTo(femaleLabel.snp.trailing).offset(5)
-            $0.top.bottom.equalTo(maleView)
-            $0.width.equalTo(10)
-        }
-        unisexLabel.snp.makeConstraints {
-            $0.leading.equalTo(unisexView.snp.trailing).offset(5)
-            $0.top.bottom.equalTo(maleView)
-            $0.width.equalTo(45)
-        }
-        
-        genderView.backgroundColor = .clear
-        maleView.backgroundColor = .blue
-        femaleView.backgroundColor = .red
-        unisexView.backgroundColor = .black
-        
-        maleLabel.text = "Male"
-        maleLabel.font = UIFont.systemFont(ofSize: 13)
-        femaleLabel.text = "Female"
-        femaleLabel.font = UIFont.systemFont(ofSize: 13)
-        unisexLabel.text = "Unisex"
-        unisexLabel.font = UIFont.systemFont(ofSize: 13)
-
-    }
     final private func setLocationManager() {
     locationManager.delegate = self
     locationManager.requestWhenInUseAuthorization() //권한 요청
@@ -189,6 +135,59 @@ extension ViewController {
         locationButton.setImage(UIImage(systemName: "scope"), for: .normal)
         locationButton.tintColor = UIColor.white
         locationButton.addTarget(self, action: #selector(tapedLocationButton(_:)), for: .touchUpInside)
+    }
+    final private func setGenderView() {
+        [genderView, maleView, femaleView, unisexView, maleLabel, femaleLabel, unisexLabel].forEach {
+            view.addSubview($0)
+        }
+        genderView.snp.makeConstraints {
+            $0.top.equalTo(searchBar.snp.bottom).offset(5)
+            $0.trailing.equalTo(searchBar.snp.trailing)
+            $0.height.equalTo(40)
+            $0.width.equalTo(190)
+        }
+        maleView.snp.makeConstraints {
+            $0.leading.equalTo(genderView).inset(10)
+            $0.top.bottom.equalTo(genderView).inset(15)
+            $0.width.equalTo(10)
+        }
+        maleLabel.snp.makeConstraints {
+            $0.leading.equalTo(maleView.snp.trailing).offset(5)
+            $0.top.bottom.equalTo(maleView)
+            $0.width.equalTo(30)
+        }
+        femaleView.snp.makeConstraints {
+            $0.leading.equalTo(maleLabel.snp.trailing).offset(5)
+            $0.top.bottom.equalTo(maleView)
+            $0.width.equalTo(10)
+        }
+        femaleLabel.snp.makeConstraints {
+            $0.leading.equalTo(femaleView.snp.trailing).offset(5)
+            $0.top.bottom.equalTo(maleView)
+            $0.width.equalTo(45)
+        }
+        unisexView.snp.makeConstraints {
+            $0.leading.equalTo(femaleLabel.snp.trailing).offset(5)
+            $0.top.bottom.equalTo(maleView)
+            $0.width.equalTo(10)
+        }
+        unisexLabel.snp.makeConstraints {
+            $0.leading.equalTo(unisexView.snp.trailing).offset(5)
+            $0.top.bottom.equalTo(maleView)
+            $0.width.equalTo(45)
+        }
+        
+        genderView.backgroundColor = .clear
+        maleView.backgroundColor = .blue
+        femaleView.backgroundColor = .red
+        unisexView.backgroundColor = .black
+        
+        maleLabel.text = "Male"
+        maleLabel.font = UIFont.systemFont(ofSize: 13)
+        femaleLabel.text = "Female"
+        femaleLabel.font = UIFont.systemFont(ofSize: 13)
+        unisexLabel.text = "Unisex"
+        unisexLabel.font = UIFont.systemFont(ofSize: 13)
 
     }
 }

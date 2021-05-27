@@ -43,7 +43,7 @@ class KakaoAddressViewController: UIViewController {
         webView = WKWebView(frame: .zero, configuration: configuration)
         self.webView?.navigationDelegate = self
         
-        guard let url = URL(string: "https://shinminhee.github.io/FoodLocation/"),
+        guard let url = URL(string: "https://shinminhee.github.io/Bosegwon/"),
               let webView = webView
         else { return }
         let request = URLRequest(url: url)
