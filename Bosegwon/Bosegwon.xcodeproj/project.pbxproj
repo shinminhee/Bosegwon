@@ -16,6 +16,8 @@
 		5E69763C265F7C800061F2BE /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69763B265F7C800061F2BE /* StoreViewController.swift */; };
 		5E69763F265F7CA20061F2BE /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69763E265F7CA20061F2BE /* MyPageViewController.swift */; };
 		5E697642265F8BFE0061F2BE /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E697641265F8BFE0061F2BE /* AssetsColor.swift */; };
+		5E697647265FCE990061F2BE /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E697646265FCE990061F2BE /* ColorView.swift */; };
+		5E69764B265FD9F20061F2BE /* KakaoAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69764A265FD9F20061F2BE /* KakaoAddressViewController.swift */; };
 		F7BF793A68A2B64AE67F2160 /* Pods_Bosegwon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F9197ADB769B90AE793CC6 /* Pods_Bosegwon.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		5E69763B265F7C800061F2BE /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		5E69763E265F7CA20061F2BE /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		5E697641265F8BFE0061F2BE /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
+		5E697646265FCE990061F2BE /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		5E69764A265FD9F20061F2BE /* KakaoAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAddressViewController.swift; sourceTree = "<group>"; };
 		73F9197ADB769B90AE793CC6 /* Pods_Bosegwon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bosegwon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5A1373C42463A139504578 /* Pods-Bosegwon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bosegwon.debug.xcconfig"; path = "Target Support Files/Pods-Bosegwon/Pods-Bosegwon.debug.xcconfig"; sourceTree = "<group>"; };
 		F5D11CCFA3F0C17D35293BA5 /* Pods-Bosegwon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bosegwon.release.xcconfig"; path = "Target Support Files/Pods-Bosegwon/Pods-Bosegwon.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5E697641265F8BFE0061F2BE /* AssetsColor.swift */,
+				5E697646265FCE990061F2BE /* ColorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				5E697618265F68C40061F2BE /* ViewController.swift */,
+				5E69764A265FD9F20061F2BE /* KakaoAddressViewController.swift */,
 				5E69763B265F7C800061F2BE /* StoreViewController.swift */,
 				5E69763E265F7CA20061F2BE /* MyPageViewController.swift */,
 			);
@@ -252,9 +258,11 @@
 			files = (
 				5E69763F265F7CA20061F2BE /* MyPageViewController.swift in Sources */,
 				5E697642265F8BFE0061F2BE /* AssetsColor.swift in Sources */,
+				5E697647265FCE990061F2BE /* ColorView.swift in Sources */,
 				5E69763C265F7C800061F2BE /* StoreViewController.swift in Sources */,
 				5E697619265F68C40061F2BE /* ViewController.swift in Sources */,
 				5E697615265F68C40061F2BE /* AppDelegate.swift in Sources */,
+				5E69764B265FD9F20061F2BE /* KakaoAddressViewController.swift in Sources */,
 				5E697617265F68C40061F2BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
