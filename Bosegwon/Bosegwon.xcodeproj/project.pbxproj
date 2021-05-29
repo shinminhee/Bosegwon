@@ -12,7 +12,7 @@
 		5E697619265F68C40061F2BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E697618265F68C40061F2BE /* ViewController.swift */; };
 		5E69761E265F68C60061F2BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E69761D265F68C60061F2BE /* Assets.xcassets */; };
 		5E697621265F68C60061F2BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E69761F265F68C60061F2BE /* LaunchScreen.storyboard */; };
-		5E697639265F79930061F2BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E697638265F79930061F2BE /* SnapKit */; };
+		5E697639265F79930061F2BE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 5E697638265F79930061F2BE /* SwiftPackageProductDependency */; };
 		5E69763C265F7C800061F2BE /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69763B265F7C800061F2BE /* StoreViewController.swift */; };
 		5E69763F265F7CA20061F2BE /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69763E265F7CA20061F2BE /* MyPageViewController.swift */; };
 		5E697642265F8BFE0061F2BE /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E697641265F8BFE0061F2BE /* AssetsColor.swift */; };
@@ -45,7 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7BF793A68A2B64AE67F2160 /* Pods_Bosegwon.framework in Frameworks */,
-				5E697639265F79930061F2BE /* SnapKit in Frameworks */,
+				5E697639265F79930061F2BE /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +149,7 @@
 				5E69760E265F68C40061F2BE /* Frameworks */,
 				5E69760F265F68C40061F2BE /* Resources */,
 				0522AE8EF2CB80B0CD6D1922 /* [CP] Embed Pods Frameworks */,
+				3AB834CCF3BE87BDCAB3F723 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,7 +157,7 @@
 			);
 			name = Bosegwon;
 			packageProductDependencies = (
-				5E697638265F79930061F2BE /* SnapKit */,
+				5E697638265F79930061F2BE /* SwiftPackageProductDependency */,
 			);
 			productName = Bosegwon;
 			productReference = 5E697611265F68C40061F2BE /* Bosegwon.app */;
@@ -186,7 +187,7 @@
 			);
 			mainGroup = 5E697608265F68C40061F2BE;
 			packageReferences = (
-				5E697637265F79930061F2BE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5E697637265F79930061F2BE /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 5E697612265F68C40061F2BE /* Products */;
 			projectDirPath = "";
@@ -225,6 +226,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bosegwon/Pods-Bosegwon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB834CCF3BE87BDCAB3F723 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bosegwon/Pods-Bosegwon-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bosegwon/Pods-Bosegwon-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bosegwon/Pods-Bosegwon-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCE90A2D764C3A4247D2C3E2 /* [CP] Check Pods Manifest.lock */ = {
@@ -461,7 +479,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5E697637265F79930061F2BE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		5E697637265F79930061F2BE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -472,9 +490,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5E697638265F79930061F2BE /* SnapKit */ = {
+		5E697638265F79930061F2BE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5E697637265F79930061F2BE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 5E697637265F79930061F2BE /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

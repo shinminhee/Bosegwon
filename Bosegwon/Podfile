@@ -7,6 +7,8 @@ target 'Bosegwon' do
 
   # Pods for Bosegwon
   pod 'NMapsMap'
-
-
+  pod ‘Firebase/Analytics’
+  pod ‘Firebase/Auth’
+  pod ‘GoogleSignIn’
+ 
 end
